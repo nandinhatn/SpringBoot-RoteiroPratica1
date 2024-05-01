@@ -4,35 +4,56 @@
  */
 
 
-let cep = document.getElementById("CEP").value;
-console.log(cep);
+
 let inputRua = document.getElementById("rua");
 let bairro = document.getElementById("bairro");
 let cidade = document.getElementById("cidade");
 let estado = document.getElementById("estado");
+let button = document.getElementById("button");
 
 let results = document.getElementsByClassName("results");
+console.log(results);
 
 
 Array.from(results).map((el)=> el.style.display='none');
 
+button.addEventListener("click", function(e){
+    checkCep();
+    
+});
 
-let button = document.getElementById("button");
 
-async function getCEP() {
+async function getCEP(cep) {
   const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
   const dados = await response.json();
-  console.log(dados);
+  
+ if(dados){
+    Array.from(results).map((el)=> el.style.display='block');
+
+      inputRua.value = dados.logradouro;
+      bairro.value = dados.bairro;
+      cidade.value = dados.localidade;
+      estado.value= dados.uf;
+  }
+  else{
+      inputRua.value =" ";
+      bairro.value = " ";
+      cidade.value = " ";
+      estado.value= " ";
+  }
 }
 
 function checkCep(){
-    console.log(cep.length);
-    if(cep.lenght===8){
+    
+   let cep = document.getElementById("CEP").value;  
+    console.log(cep);
+    let tamanhoCEP = cep.length;
+   
+    if(tamanhoCEP ===8){
+        
         console.log(cep.length);
-        getCEP();
+        getCEP(cep);
+       
     }
-    else{
-        console.log("vazio");
-    }
+   
 };
-button.addEventListener("click", checkCep);

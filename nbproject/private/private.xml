@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/NetBeansProjects/roteiroPratica1/nbproject/build-impl.xml</file>
-            <file>file:/D:/NetBeansProjects/roteiroPratica1/build/web/controller.js</file>
-            <file>file:/D:/NetBeansProjects/roteiroPratica1/src/conf/MANIFEST.MF</file>
+            <file>file:/D:/NetBeansProjects/roteiroPratica1/web/controller.js</file>
+            <file>file:/D:/NetBeansProjects/roteiroPratica1/web/styles.css</file>
             <file>file:/D:/NetBeansProjects/roteiroPratica1/web/WEB-INF/jsp/index.jsp</file>
-            <file>file:/D:/NetBeansProjects/roteiroPratica1/build/web/redirect.jsp</file>
-            <file>file:/D:/NetBeansProjects/roteiroPratica1/web/redirect.jsp</file>
         </group>
     </open-files>
 </project-private>

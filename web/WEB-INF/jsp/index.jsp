@@ -65,7 +65,7 @@
                 </div>
                </div>
               
-                <button type="button" disabled id="button" class="btn btn-primary">Consulta CEP</button>
+                <button type="button"  id="button" class="btn btn-primary">Consulta CEP</button>
                 <div id="msgErro"> Aqui</div>
             </form>
             <div>
